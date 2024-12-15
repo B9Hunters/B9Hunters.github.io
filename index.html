@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Team</title>
+    <title>B9 Hunters Cricket Team</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -203,7 +204,7 @@ cursor:pointer ;
 .panal2{
    background-color: #222f3d;
    color: whitesmoke;
-   height: 120px;
+   height: 135px;
    display: flex;
    justify-content: center;
 }
@@ -222,7 +223,70 @@ ul a{
 }
 
 .about{
-    color: rgb(239, 223, 223);
+    color: rgb(255, 255, 255);
+}
+
+.panal4 {
+    background-color: #ffffff;
+    color: #fff;
+    height: 40px;
+    padding: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    /* margin: auto; */
+}
+
+/* Header Styling */
+.panal4 h3 {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Icons container styling */
+.panal4 .icons {
+    display: inline-block;
+    margin: 0 5px; /* Add spacing between icons */
+   margin-top: 7px;
+    
+}
+
+/* Link styling */
+.panal4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Icon Styling */
+ion-icon {
+    font-size: 40px;
+    color: #666; /* Default color for icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon hover effect */
+ion-icon:hover {
+    color: #007bff; /* Light blue hover color */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Specific colors for each platform */
+.panal4 a[href*="wa.me"] ion-icon { color: #25d366; } /* WhatsApp green */
+.panal4 a[href*="facebook"] ion-icon { color: #3b5998; } /* Facebook blue */
+.panal4 a[href*="tiktok"] ion-icon { color: #000; } /* TikTok black */
+.panal4 a[href*="instagram"] ion-icon { color: #e1306c; } /* Instagram pink */
+.panal4 a[href*="linkedin"] ion-icon { color: #0a66c2; }  
+
+/* Responsive design for mobile */
+@media (max-width: 500px) {
+    .panal4 h3 {
+        font-size: 20px;
+    }
+    ion-icon {
+        font-size: 30px; /* Reduce icon size for small screens */
+    }
 }
 
     </style>
@@ -385,6 +449,8 @@ ul a{
     
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -452,9 +518,43 @@ document.addEventListener("DOMContentLoaded", function () {
        <h3 class="about">About Developer</h3>
 </div>
 
+
+<div class="panal4">
+    <h3 class="icons">Contact Me On</h3>
+    <span class="icons">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/923429997885" target="_blank">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+    </span>
+    <span class="icons">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/Yaqoob Anjum Anjum" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </span>
+    <span class="icons">
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank">
+            <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+    </span>
+    <span class="icons">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/Anjum_writes7" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+    </span>
+    
+    <a href="https://www.linkedin.com/yaqoob-anjum-28a64b300" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+</span>
+</div>
+
+
 <div class="panal3">
    <p>&copy; 2024 - 2025 Qari King. All Rights Reserved.</p>
-
 </div>
 
     </footer>
